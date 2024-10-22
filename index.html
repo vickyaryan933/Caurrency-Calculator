@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="background">
+            <div class="box">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <span>Currency Calculator</span>
+                <form method="POST">
+                    <div class="container-2">
+                        <div class="sub-container">
+
+                            <div class="from">
+                                <label for="fromCurrency">From</label>
+                                <div class="select-container">
+                                    <div>
+                                        <img src="https://flagsapi.com/IN/flat/64.png" alt="Indian Flag">
+                                    </div>
+
+                                    <div class="dropdowns">
+                                        <select name="From" id="fromCurrency"></select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="to">
+                                <label for="toCurrency">To</label>
+                                <div class="select-container">
+                                    <div>
+                                        <img src="https://flagsapi.com/US/flat/64.png" alt="US Flag">
+                                    </div>
+
+                                    <div class="dropdowns">
+                                        <select name="To" id="toCurrency"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="amount">
+                            <div>
+                                <label for="amount">Enter Amount</label>
+                                <input type="number" name="amount" value="" id="amount">
+                            </div>
+                            <div class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <div id="exchangedAmount">
+                                <label for="exchangedAmount">Exchanged Amount</label>
+                                <input type="number" name="exchangedAmount" value="" disabled>
+                            </div>
+                        </div>
+
+                        <div class="msg">
+                            <p></p>
+                            <button type="submit">Get Exchange Rate</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
